@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<body>
+<h1>NUMBER STATUS  </h1>
+<table border=1 >
+<tr><td>Input the number</td><td><input type="text" id="even"/></td></tr>
+<tr><td></td><td><input type="button" id="sub" value="check" onclick="even_numbers()"/></td></tr>
+</table>
+<p id="ad"></p>
+
+</body>
+
+<script type="text/javascript">
+//alert("edfyihdhk");
+
+function even_numbers(){
+var eve = document.getElementById("even").value;
+
+
+if (eve%2==0){
+document.getElementById("ad").innerHTML=eve +" is an even number" + "";
+}else {
+document.getElementById("ad").innerHTML=eve +" is not an even number " + "";
+}
+
+}
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,63 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="othercalc_stylesheet.css"/>
+</head>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<table class="table">
+<tr>
+<td class="home"  onclick="javascript:navigate('index.html')"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td" onclick="javascript:navigate('area.html')"><a href="area.html">AREA OF SHAPES</a></td>
+<td class="td"  onclick="javascript:navigate('volume.html')"><a href="volume.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td"  onclick="javascript:navigate('othercalc.html')"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td"  onclick="javascript:navigate('prime.html')"><a href="prime.html"> CHECK PRIME NUMBER</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('differentiation.html')"><a href="differentiation.html"> DIFFERENTIATION</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('integration.html')"><a href="integration.html"> DEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('indefiniteintegration.html')"><a href="indefiniteintegration.html">INDEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('multiple.html')"><a href="multiple.html" > MULTIPLES</a></td>
+<tr><td class="td" onclick="javascript:navigate('length_of_arc.html')"><a href="length_of_arc.html"> LENTH OF ARC</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('gradient.html')"><a href="gradient.html">GRADIENT</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('simple.html')"><a href="simple.html">SIMPLE INTEREST </a></td></tr>
+</tr>
+</table>
+<div id="whole">
+<h1>DEFINITE INTEGRATION</h1>
+
+<ul>
+<li><h3>A is the coefficient of x</h3></li>
+<li><h3>b is the superscript/power of x</h3></li>
+<li><h3>k is the arbitrary constant</h3></li>
+<li><h3>x is the variable</h></li>
+<li><h3>c is the upper limit</h3></li>
+<li><h3>d is the lower limit</h3></li></ul>
+
+<h2> Ax	<sup>b</sup> + k</h2>
+<TABLE><TR><TD><h3>A</h3></TD><TD><input type="text" id="cof" /></TD></TR>
+       <TR><TD><h3>b</h3></TD><TD><input type="text" id="pow" /></TD></TR>       
+       <TR><TD><h3>c</h3></TD><TD><input type="text" id="up" /></TD></TR>
+       <TR><TD><h3>d</h3></TD><TD><input type="text" id="low" /></TD></TR>
+       <TR><TD><h3>k</h3></TD><TD><input type="text" id="con" /></TD></TR>
+
+<TR><TD><button onclick="compute()"class="button">Compute</button></TD></TR></TABLE>
+<h2 id="ans"></h2></div>
+</body>
+<script type="text/javascript">
+ function compute(){
+var A=document.getElementById("cof").value;
+var b=document.getElementById("pow").value;
+var u=document.getElementById("up").value;
+var l=document.getElementById("low").value;
+var c=document.getElementById("con").value;
+var ab=b+1;
+var bc= A/(ab);
+var cd=u^(ab);
+var ef=l^(ab);
+var gh=(bc*cd)+(c*u);
+var ij=(bc*gh)+(c*u);
+var kl=gh-ij;
+
+document.getElementById("ans").innerHTML="The definite integral is "  + kl ;}
+</script>
+</html>
+<script type ="text/javascript" src="javascript.js"> </script> 

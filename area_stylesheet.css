@@ -1,0 +1,19 @@
+ #whole {position:absolute;
+       //border:2px dashed yellow;
+	   top:20%;
+	   left:30%;
+	   margin:0px;
+	   width:60%;
+	   height:;
+	   font-size:xx-large ;
+	   }
+.button{padding:20px;
+        background-color:#c53fd7;
+        border:NONE;
+        font-size:16px;
+        border-radius:10px;
+
+}
+input[type=text]{width:160;
+                 height:30;
+                 background-color:#cbf57f;}

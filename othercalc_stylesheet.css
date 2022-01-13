@@ -1,0 +1,43 @@
+ #whole {position:absolute;
+       //border:2px dashed yellow;
+	   top:20%;
+	   left:40%;
+	   margin:0px;
+	   width:60%;
+	   height:;
+	   font-size:xx-large ;
+	   }
+.button{padding:17;
+        background-color:#c53fd7;
+        border:NONE;
+        font-size:16px;
+        border-radius:4px;
+
+}
+input[type=text]{width:160;
+                 height:30;
+                 background-color:#cbf57f;
+                 border-radius:7px;}
+#arrowother{font-size:56px;
+       background-color:black;
+       color:#d52008;
+       padding-right:15px;
+       position:absolute;
+       top:21%;
+       left:27%; 
+       //border:2px dashed green;
+       //border-radius:9px;
+       animation-name:examples;
+       animation-timing-function: linear;
+       animation-direction: alternate;
+       animation-duration:6s;
+       animation-fill-mode:reverse;
+       animation-delay:0s;
+       animation-iteration-count: infinite;}
+@keyframes examples{
+           0%{top:21%; left:27%;}
+           50%{top:90%; left:27%;}
+           100%{top:21%; left:27%;}
+#vol{position:absolute;
+     top:30%;
+     left:49%;}

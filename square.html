@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="area_stylesheet.css"/>
+</head>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<table class="table" border="1" width="100%" height="100%">
+<tr>
+<td class="home" onclick="javascript:navigate('index.html')"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td" onclick="javascript:navigate('area.html')"><a href="area.html" id="are">AREA OF SHAPES</a></td>
+<td class="td" onclick="javascript:navigate('volume.html')"><a href="volume.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td" onclick="javascript:navigate('othercalc.html')"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td" onclick="javascript:navigate('square.html')"><a href="square.html"> SQUARE</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('rectangle.html')"><a href="rectangle.html"> RECTANGLE</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('circle.html')"><a href="circle.html"> CIRCLE</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('sector.html')"><a href="sector.html"> SECTOR</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('annulus.html')"><a href="annulus.html" > ANNULUS</a></td>
+<tr><td class="td" onclick="javascript:navigate('csa.html')"><a href="csa.html"> C.S.A OF A CYLINDER</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('tsa.html')"><a href="tsa.html"> T.S.A OF A CYLINDER</a></td></tr>
+<tr><td  class="td" onclick="javascript:navigate('triangle.html')"><a href="triangle.html"> TRIANGLE</a></td></tr>
+</table>
+<div id="whole"><table>
+<caption ><h1><marquee style="text-align:center">AREA OF A SQUARE</marquee></h1></caption>
+<tr>
+<td><h1>Side length</h1></td>
+<td><input type="text" id="le"><h1>cm</h1></td>
+</tr>
+<tr> 
+<td colspan=2><input type="button" value="Calculate" onclick="compute()" class="button"></td>
+</tr>
+
+</table><h1 id="area"></h1</div>
+</body>
+<script type="text/javascript">
+function compute(){
+var lt=document.getElementById("le").value;
+var pie= lt*lt;
+document.getElementById("area").innerHTML="The area of the square is "+ pie + "cm<sup>2</sup>"; 
+}
+</script >
+</html>
+<script type ="text/javascript" src="javascript.js"> </script> 
+

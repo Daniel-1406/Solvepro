@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html><head>
+<link rel="stylesheet" type="text/css" href="volume_stylesheet.css"/>
+</head>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<body>
+<table class="table">
+<tr>
+<td class="home"  onclick="javascript:navigate('index.html')"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td  onclick="javascript:navigate('area.html')"><a href="area.html">AREA OF SHAPES</a></td>
+<td class="td"  onclick="javascript:navigate('volume.html')"><a href="volume.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td"  onclick="javascript:navigate('othercalc.html')"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td" onclick="javascript:navigate('cube.html')"><a href="cube.html">CUBE</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('cuboid.html')"><a href="cuboid.html">CUBOID</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('cylinder.html')"><a href="cylinder.html">CYLINDER</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('cone.html')"><a href="cone.html">CONE</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('triangularprism.html')"><a href="triangularprism.html">TRIANGULAR PRISM</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('pyramid.html')"><a href="pyramid.html">PYRAMID</a></td></tr>
+</table>
+<div id="whole">
+<table ><caption><marquee><h1>VOLUME OF A CONE</h1></marquee></caption>
+<tr><td><h1>Radius :</h1></td>
+    <td><input type="text" id="r" />cm</td>
+</tr>
+<tr><td><h1>Height :</h1></td>
+    <td><input type="text" id="h" >cm</td>
+</tr>
+<tr>
+    <td ><input type="submit" value="compute" onclick="calculate()" class="button"/></td>
+</tr>
+</table>
+<h2 id="ans"></h2></div>
+
+<script type="text/javascript"> 
+function calculate(){ 
+var radius=document.getElementById("r").value;
+var height=document.getElementById("h").value;
+var answer=volume(radius,height);
+document.getElementById("ans").innerHTML="THE VOLUME OF THE CONE IS " + answer + "cm<sup>3</sup>";
+}
+function volume(r,h){
+var pie=(22/7);
+var cal=(r*r*h);
+var all = mul * pie * cal;
+return all;
+}
+</script>
+</body>
+
+</html>
+<script type ="text/javascript" src="javascript.js"> </script> 

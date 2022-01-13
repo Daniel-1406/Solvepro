@@ -1,0 +1,37 @@
+<!doctype html>
+<html><body>
+
+<p id="print"></p>
+<script type="text/javascript">
+function time(){
+var now = new Date();
+var hours = now.getHours();
+var mins = now.getMinutes();
+var secs = now.getSeconds();
+document.getElementById("print").innerHTML= hours + ":"+ mins +":"+ secs +"";
+}
+
+setInterval("time()",1000);
+
+time();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

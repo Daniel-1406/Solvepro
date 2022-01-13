@@ -1,0 +1,55 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="othercalc_stylesheet.css"/>
+</head>
+<body>
+
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<table class="table">
+<tr>
+<td class="home"  onclick="javascript:navigate('index.html')"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td" onclick="javascript:navigate('area.html')"><a href="area.html">AREA OF SHAPES</a></td>
+<td class="td" onclick="javascript:navigate('volume.html')"><a href="volume.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td" onclick="javascript:navigate('othercalc.html')"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td" onclick="javascript:navigate('prime.html')"><a href="prime.html"> CHECK PRIME NUMBER</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('differentiation.html')"><a href="differentiation.html"> DIFFERENTIATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('integration.html')"><a href="integration.html"> DEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('indefiniteintegration.html')"><a href="indefiniteintegration.html">INDEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('multiple.html')"><a href="multiple.html" > MULTIPLES</a></td>
+<tr><td class="td" onclick="javascript:navigate('length_of_arc.html')"><a href="length_of_arc.html"> LENTH OF ARC</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('gradient.html')"><a href="gradient.html">GRADIENT</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('simple.html')"><a href="simple.html">SIMPLE INTEREST </a></td></tr>
+</tr>
+</table>
+
+<div id="whole">
+<h1><marquee>DIFFERENTIATION</marquee></h1>
+
+<ul>
+<li><h2>A is the coefficient of x</h2></li>
+<li><h2>b is the superscript/power of x</h2></li>
+<li><h2>k is the constant</h2></li>
+<li><h2>x is the variable</h2></li></ul>
+<h1> Ax	<sup>b</sup> + k</h1>
+<TABLE><TR><TD><h2>A</h2></TD><TD><input type="text" id="cof" /></TD></TR>
+       <TR><TD><h2>b</h2></TD><TD><input type="text" id="pow" /></TD></TR>
+       <TR><TD><h2>k</h2></TD><TD><input type="text" id="con" /></TD></TR>
+
+<TR><TD><button onclick="compute()" class="button">Compute</button></TD></TR></TABLE>
+<h3 id="ans"></h3></div>
+</body>
+<script type="text/javascript">
+ function compute(){
+var cent=document.getElementById("cof").value
+var mon=document.getElementById("pow").value
+var sol=cent * mon;
+var lve= mon-1;
+if(lve==0){
+document.getElementById("ans").innerHTML="The derivative of " + cent + "x" +"<sup>" + mon + "</sup> is " + sol ;
+}
+else{
+document.getElementById("ans").innerHTML="The derivative of " + cent + "x" +"<sup>" + mon + "</sup> is " + sol + "x" + "<sup>" + lve + "</sup>"  ;}}
+</script>
+</html>
+<script type ="text/javascript" src="javascript.js"> </script> 

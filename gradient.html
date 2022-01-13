@@ -1,0 +1,47 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="othercalc_stylesheet.css"/>
+</head>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<table class="table">
+<tr>
+<td class="home"  onclick="javascript:navigate('index.html')"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td" onclick="javascript:navigate('area.html')"><a href="area.html">AREA OF SHAPES</a></td>
+<td class="td"  onclick="javascript:navigate('volume.html')"><a href="volume.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td"  onclick="javascript:navigate('othercalc.html')"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td"  onclick="javascript:navigate('prime.html')"><a href="prime.html"> CHECK PRIME NUMBER</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('differentiation.html')"><a href="differentiation.html"> DIFFERENTIATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('integration.html')"><a href="integration.html"> DEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('indefiniteintegration.html')"><a href="indefiniteintegration.html">INDEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('multiple.html')"><a href="multiple.html" > MULTIPLES</a></td>
+<tr><td class="td" onclick="javascript:navigate('length_of_arc.html')"><a href="length_of_arc.html"> LENTH OF ARC</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('gradient.html')"><a href="gradient.html">GRADIENT</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('simple.html')"><a href="simple.html">SIMPLE INTEREST </a></td></tr>
+</tr>
+</table>
+<div id="whole">
+<h1>THE GRADIENT OF A STRAIGHT LINE</h1>
+
+<TABLE><TR><TD><h2>x<sub>1</sub> :</h2></TD><TD><input type="text" id="first" /></TD></TR>
+       <TR><TD><h2>x<sub>2</sub> :</h2></TD><TD><input type="text" id="sec" /></TD></TR>       
+       <TR><TD><h2>y<sub>1</sub> :</h2></TD><TD><input type="text" id="ted" /><TD></TR>
+       <TR><TD><h2>y<sub>2</sub> :</h2></TD><TD><input type="text" id="fot" /><TD></TR>
+
+<TR><TD><button onclick="compute()" class="button">Compute</button></TD></TR></TABLE>
+<h1 id="ans"></h1></div>
+</body>
+<script type="text/javascript">
+ function compute(){
+var A=document.getElementById("first").value;
+var b=document.getElementById("sec").value;
+var c=document.getElementById("ted").value;
+var d=document.getElementById("fot").value;
+var ab=d-c;
+var cd= b-A;
+var ef=ab/cd;
+document.getElementById("ans").innerHTML="The gradient of the line is "+ ef;}
+</script>
+</html>
+<script type ="text/javascript" src="javascript.js"> </script> 

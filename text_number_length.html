@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<body>
+
+characters:
+<textarea name="textno" id="textno" rows=5 cols=27></textarea>
+<input type="button" onclick="compute()"  value=" check number of characters">
+<p id="id"></p>
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+
+
+function compute(){ 
+var low=document.getElementById("textno").value;
+var adc=low.length;
+
+document.getElementById("id").innerHTML="The lenght of the text is "+adc;
+
+}
+
+
+
+
+
+</script>
+
+
+
+</html>

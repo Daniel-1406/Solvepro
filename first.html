@@ -1,0 +1,83 @@
+<!doctype HTML>
+<html>
+<head>
+<style>
+body {font-size:20px;
+      
+	  }
+#table{border:none;
+       background-color:green;
+	   position:absolute;
+	   border-left:none;
+	   border-top:none;
+	   width:100%;
+	   height:90px;
+	   font-family:arial black;
+	   padding-right:none;
+	   min-width:300px;
+	   border-radius:5px;}
+td{border:1px solid black;
+   text-align:centre;
+   min-length:30px;
+   cursor:pointer}
+td:hover{background-color:white;
+		 color:yellow;}
+a:visited{color:#551063;}	 
+a:link{color:#551063;
+       text-decoration:none;}
+#solve{font-size:60px;
+       color:yellow;
+	   position:absolute;
+	   left:190px;
+	   top:190px;
+	   background-color:purple;
+	   animation-name:solve;
+	   animation-duration:10s;
+	    animation-iteration-count: infinite;
+		animation-direction:forward;
+		border-radius:25px;}
+@keyframes solve{
+      0%{background-color:purple;}
+     10% {background-color:green;}
+	  30%{background-color:orange;}
+      40%{background-color:grey;}
+      50%{background-color:pink;}
+      60%{background-color:white;}
+      70%{background-color:acc7c2;}
+      80%{background-color:#3fcc4b;}
+      100%{background-color:f3c9bd;}
+}
+@keyframes solve {
+  0%   {background-color:red; left:0px; top:100px;}
+  25%  {background-color:yellow; left:100%; top:100px;}
+  50%  {background-color:blue; left:100%; top:400px;}
+  75%  {background-color:green; left:400px; top:400px;}
+  100% {background-color:red; left:0px; top:100px;}
+}
+.solve{font-family:algerian;}
+</style></head>
+<body>
+<div id="table">
+<table cellspacing="0px">
+<tr><td onclick="javascript:navigate('triangle.html')"><label for="tree"><a href="triangle.html" id="tree" >Area <br/>of <br/>triangle</a></label></td>
+<td class="cuboid" onclick="javascript:navigate('cuboid.html')"> <a href="cuboid.html">Volume of<br/> a Cuboid</a></td>
+<td class="time"> <a href="printime.html">Check time</a></td>
+<td class="tsa"> <a href="TSA.html">Total surface <br/>area of <br/>a cylinder</a></td>
+<td class="si"> <a href="simple.html">Simple interest</a></td>
+<td class="csa"> <a href="csa.html">Curved surface<br/> area of <br/>a cylinder</a></td>
+<td class="cone"> <a href="cone.html">Volume of <br/>a cone</a></td>
+<td class="multiple"> <a href="multiples.html">multiples</a></td>
+<td class="inte"> <a href="integration.html">integration</a></td>
+<td class="diff"> <a href="differentiation">differentiation</a></td></tr>
+
+</table></div><>
+<div ID="solve" class="solve">SOLVE <br/> PRO...</div><>
+</body>
+</html>
+
+<script type='text/javascript'>
+function navigate(location){
+ window.location=location;
+}
+
+</script>

@@ -1,0 +1,48 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="othercalc_stylesheet.css"/>
+</head>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<table class="table">
+<tr>
+<td class="home" onclick="javascript:navigate('index.html')"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td"  onclick="javascript:navigate('area.html')"><a href="area.html">AREA OF SHAPES</a></td>
+<td class="td" onclick="javascript:navigate('volume.html')"><a href="volume.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td"  onclick="javascript:navigate('othercalc.html')"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td"  onclick="javascript:navigate('prime.html')"><a href="prime.html"> CHECK PRIME NUMBER</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('differentiation.html')"><a href="differentiation.html"> DIFFERENTIATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('integration.html')"><a href="integration.html"> DEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('indefiniteintegration.html')"><a href="indefiniteintegration.html">INDEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('multiple.html')"><a href="multiple.html" > MULTIPLES</a></td>
+<tr><td class="td"  onclick="javascript:navigate('length_of_arc.html')"><a href="length_of_arc.html"> LENTH OF ARC</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('gradient.html')"><a href="gradient.html">GRADIENT</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('simple.html')"><a href="simple.html">SIMPLE INTEREST </a></td></tr>
+</tr>
+</table>
+<div id="whole">
+<h1>INDEFINITE INTEGRATION</h1>
+
+ <ul>
+<li><h2>A is the coefficient of x</h2></li>
+<li><h2>b is the superscript/power of x</h2></li>
+<li><h2>k is the arbitrary constant</h2></li>
+<li><h2>x is the variable</h2></li></ul>
+<p> Ax	<sup>b</sup></p>
+<TABLE><TR><TD><h2>A</h2></TD><TD><input type="text" id="cof" /></TD></TR>
+       <TR><TD><h2>b</h2></TD><TD><input type="text" id="pow" /></TD></TR>
+
+<TR><TD><button onclick="compute()" class="button">Compute</button></TD></TR></TABLE>
+<h3 id="ans"></h3></div>
+</body>
+<script type="text/javascript">
+ function compute(){
+var A=document.getElementById("cof").value
+var b=document.getElementById("pow").value
+var sol=b+1;
+var lve= A/(sol);
+document.getElementById("ans").innerHTML="The integral of " + A + "x" +"<sup>" + b + "</sup> is " + lve + "x" + "<sup>" + sol + "</sup> + k"  ;}
+</script>
+</html>
+<script type ="text/javascript" src="javascript.js"> </script> 

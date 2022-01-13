@@ -1,0 +1,59 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="othercalc_stylesheet.css"/>
+</head>
+
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<table class="table">
+<tr>
+<td class="home"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td"><a href="AREA.html">AREA OF SHAPES</a></td>
+<td class="td"><a href="VOLUME.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td"><a href="prime.html"> CHECK PRIME NUMBER</a></td></tr>
+<tr><td class="td"><a href="differentiation.html"> DIFFERENTIATION</a></td></tr>
+<tr><td class="td"><a href="integration.html"> DEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"><a href="indefiniteintegration.html">INDEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"><a href="multiple.html" > MULTIPLES</a></td>
+<tr><td class="td"><a href="length_of_arc.html"> LENTH OF ARC</a></td></tr>
+<tr><td class="td"><a href="gradient.html">GRADIENT</a></td></tr>
+<tr><td class="td"><a href="simple.html">SIMPLE INTEREST </a></td></tr>
+</tr>
+</table>
+<div id="whole">
+<table id="tab">
+<h1>FIND THE MULTIPLE OF A NUMBER</h1>
+<tr>
+<td><H1>Enter the unit number </H1></td>
+<td><input type="text" id="unit"></td>
+</tr>
+<tr>
+<td><H1>Enter the limit </H1></td>
+<td><input type="text" id="limit"></td>
+</tr>
+<tr> 
+<td colspan=2><input type="button" value="Compute" onclick="find()" class="button"></td></tr>
+
+</table>
+<H1 id="area"> </H1></div>
+</body>
+<script type="text/javascript">
+function find(){
+var u=document.getElementById("unit").value;
+var l=document.getElementById("limit").value;
+
+counter=0;
+i=1;
+while(i<=l){
+  if(i%u == 0){
+    counter=counter +1;    
+  }
+  i=i+1;
+}
+document.getElementById("area").innerHTML="There are "+ counter + " multiple of "+u + " in "+ l; 
+}
+</script >
+</html>

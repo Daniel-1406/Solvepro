@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="othercalc_stylesheet.css"/>
+</head>
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<table class="table">
+<tr>
+<td class="home">  onclick="javascript:navigate('index.html')"><a href="index.html"><strong>HOME</strong></a></td>
+<td class="td" onclick="javascript:navigate('area.html')"><a href="area.html">AREA OF SHAPES</a></td>
+<td class="td" onclick="javascript:navigate('volume.html')"><a href="volume.html">VOLUME OF 3-DIMENSIONAL SHAPES</a></td>
+<td class="td" onclick="javascript:navigate('othercalc.html')"><a href="othercalc.html">OTHER CALCULATIONS</a></td>
+<tr><td class="td" onclick="javascript:navigate('prime.html')"><a href="prime.html"> CHECK PRIME NUMBER</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('differentiation.html')"><a href="differentiation.html"> DIFFERENTIATION</a></td></tr>
+<tr><td class="td" onclick="javascript:navigate('integration.html')"><a href="integration.html"> DEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('indefiniteintegration.html')"><a href="indefiniteintegration.html">INDEFINITE INTEGRATION</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('multiple.html')"><a href="multiple.html" > MULTIPLES</a></td>
+<tr><td class="td"  onclick="javascript:navigate('length_of_arc.html')"><a href="length_of_arc.html"> LENTH OF ARC</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('gradient.html')"><a href="gradient.html">GRADIENT</a></td></tr>
+<tr><td class="td"  onclick="javascript:navigate('simple.html')"><a href="simple.html">SIMPLE INTEREST </a></td></tr>
+</tr>
+</table>
+ <div id="whole"><table><caption><marquee><h1>LENGTH OF AN ARC</h1></marquee></caption>
+<h2><tr><td><H1 class="input">Angle substended by the arc</H1></td>
+    <td><input type="text" id="h"/>  °</td></tr>
+<tr><td><H1>Radius  </H1></td>
+    <td><input type="text" id="r"/><H1>cm</H1></td></tr>
+<tr><td><input type="submit" value="Compute" onclick="fom()" class="button" /></td></tr>
+</table><H1 id="ans"></H1></div>
+
+<script type="text/javascript">
+function fom(){
+var ht =document.getElementById("h").value;
+var rs =document.getElementById("r").value;
+var tsa=(ht/360)*((2*22*rs)/7);
+document.getElementById("ans").innerHTML="The length of the arc substended by " + ht +"° with<br> a radius of "+ rs + "cm is " + tsa + "m"  ;
+}
+
+
+
+</script>
+</html>
+
+<script type ="text/javascript" src="javascript.js"> </script> 
+
+
+
+
+
